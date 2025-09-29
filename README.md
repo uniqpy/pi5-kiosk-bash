@@ -2,14 +2,14 @@
 
 A single-script solution to turn a Raspberry Pi 5 into a kiosk that displays a webpage in full screen. Ideal for dashboards (e.g., Power BI) and status boards.
 
-> **Note:** Not intended for use with touchscreens.
+> **Note:** Not tested for use with touchscreens.
 
 ## Features
 
 - Lightweight setup using Raspberry Pi OS (Bookworm)
-- Auto-launches a specified webpage on boot
+- Auto-launches a specified webpage on boot in chromium kiosk mode
 - Optional auto-refresh capability
-- Single executable Bash script
+- A Single executable Bash script
 
 ---
 
@@ -26,7 +26,7 @@ A single-script solution to turn a Raspberry Pi 5 into a kiosk that displays a w
 
 1. Flash Raspberry Pi OS (Bookworm, with desktop) onto your Pi.
 2. Boot up the Pi and connect it to a monitor.
-3. [Download the latest release](https://github.com/yourusername/pi5-kiosk-bash/releases) from this GitHub repository.
+3. [Download the latest release](https://github.com/uniqpy/pi5-kiosk-bash/releases) from this GitHub repository.
 4. Open the script in a text editor (e.g., nano) and set your desired webpage URL:
 
    ```bash
@@ -49,7 +49,3 @@ A single-script solution to turn a Raspberry Pi 5 into a kiosk that displays a w
 To enable periodic refreshes, you can modify the script or add a cron job.
 
 ---
-
-## License
-
-MIT License
